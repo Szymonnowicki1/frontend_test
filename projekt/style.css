@@ -1,10 +1,10 @@
 body {
-    background-color: grey;
+    background-color: rgb(42, 45, 54);
     margin: 0;
 }
 
 .navbar {
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(11, 12, 16);
     display: flex;
     align-items: center;
 
@@ -27,23 +27,28 @@ body {
     display: flex;
     justify-content: space-around;
     color: white;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(11, 12, 16);
     align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h1 {
     text-align: center;
-    text-decoration: underline;
     color: white;
-    text-underline-offset: 15px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
 }
 
 h2 {
     font-weight: bold;
-    color: white; 
+    color: white;
+    margin-bottom: 60px; 
 
 }
 .columns {
@@ -68,5 +73,62 @@ h2 {
 }
 
 .radioo {
-float: center;
+    float: center;
 }
+
+.bt {
+    background-color: rgb(42, 45, 54);
+    font-size: 26px;
+    border: 1px solid #ffffff;
+    color: rgb(103, 103, 103);
+    padding: 5px 40px;
+    margin: 0 25px;
+    border-radius: 8%;
+}
+
+.bt:hover {
+    background-color: coral;
+}
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 8%; 
+    height: 1px; 
+    background-color: white; 
+}
+
+.nabthat {
+    color: rgb(46, 46, 46);
+}
+.radioo input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .press {
+    background-color: rgb(11, 12, 16);
+    border: 1px solid #ffffff;
+    color: rgb(103, 103, 103);
+    padding: 10px 70px;
+    border-radius: 8%;
+
+  }
+  .fa-solid {
+    margin-left: 5px;
+  }
+  
+  .awesome {
+    flex-direction: column;
+    
+    background-color: rgb(11, 12, 16);
+    color: rgb(103, 103, 103);
+    
+  
+}
+
