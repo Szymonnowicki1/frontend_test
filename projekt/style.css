@@ -1,6 +1,8 @@
 body {
-    margin  : 0;
+    background-color: grey;
+    margin: 0;
 }
+
 .navbar {
     background-color: rgb(44, 44, 44);
     display: flex;
@@ -20,6 +22,7 @@ body {
     text-align: right;
     font-size: 26px;
 }
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -29,4 +32,41 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    text-underline-offset: 15px;
+}
+
+h2 {
+    font-weight: bold;
+    color: white; 
+
+}
+.columns {
+    display: flex;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.588); 
+}
+
+.col1 {
+    width: 33%;
+
+}
+
+.col2 {
+    width: 33%;
+
+}
+
+.col3 {
+    width: 33%;
+
+}
+
+.radioo {
+float: center;
 }
