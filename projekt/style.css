@@ -7,7 +7,6 @@ body {
     background-color: rgb(11, 12, 16);
     display: flex;
     align-items: center;
-
 }
 
 .image {
@@ -15,7 +14,6 @@ body {
 }
 
 .text {
-
     color: white;
     padding-right: 50px;
     margin-left: auto; 
@@ -42,38 +40,57 @@ h1 {
     position: relative;
     padding-top: 40px;
     padding-bottom: 60px;
-
 }
 
 h2 {
     font-weight: bold;
     color: white;
-    margin-bottom: 60px; 
-
+    margin-bottom: 60px;
 }
+
 .columns {
     display: flex;
     text-align: center;
     color: rgba(245, 245, 245, 0.588); 
 }
 
-.col1 {
+.col1, .col2, .col3 {
     width: 33%;
-
-}
-
-.col2 {
-    width: 33%;
-
-}
-
-.col3 {
-    width: 33%;
-
 }
 
 .radioo {
-    float: center;
+    float: left;
+}
+
+.radioo input[type="radio"] {
+    display: none;
+}
+
+.radioo label {
+    display: block;
+    padding-left: 110px;
+    position: relative;
+    margin-bottom: 40px;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.radioo label::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.radioo input[type="radio"]:checked + label::before {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow:0px 0px 0px 5px rgb(42, 45, 54) inset;
 }
 
 .bt {
@@ -84,11 +101,13 @@ h2 {
     padding: 5px 40px;
     margin: 0 25px;
     border-radius: 8%;
+    cursor: pointer;
 }
 
 .bt:hover {
     background-color: coral;
 }
+
 h1::after {
     content: '';
     position: absolute;
@@ -103,32 +122,28 @@ h1::after {
 .nabthat {
     color: rgb(46, 46, 46);
 }
-.radioo input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .press {
+
+.press {
     background-color: rgb(11, 12, 16);
     border: 1px solid #ffffff;
     color: rgb(103, 103, 103);
     padding: 10px 70px;
     border-radius: 8%;
-
-  }
-  .fa-solid {
-    margin-left: 5px;
-  }
-  
-  .awesome {
-    flex-direction: column;
-    
-    background-color: rgb(11, 12, 16);
-    color: rgb(103, 103, 103);
-    
-  
 }
 
+.fa-solid {
+    margin-left: 5px;
+}
+
+.awesome {
+    flex-direction: column;
+    background-color: rgb(11, 12, 16);
+    color: rgb(103, 103, 103);
+    text-align: left;
+    border: rgb(46, 46, 46) solid 1px;
+    width: 60px;
+}
+.awesome:hover {
+    border: rgb(147, 95, 0) solid 1px;
+    cursor: pointer;
+}
