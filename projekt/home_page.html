@@ -10,17 +10,17 @@
 <body>
     <div class="navbar">
         <div class="image">
-           <a href="https://pl.wikipedia.org/wiki/HTML"><img src="logo.webp" width="100" height="100" ></a> 
+           <a href="https://pl.wikipedia.org/wiki/HTML"><img src="logo.webp" width="100" height="100"></a>
         </div>
         <div class="text">
-            <p>Zadanie <b>Rekrutacyjne</b>
+            <p>Zadanie <b>Rekrutacyjne</b></p>
         </div>
     </div>
     <div class="main">
         <h1>Nagłówek H1</h1>
         <div class="columns">
             <div class="col1">
-                <h2>Blok Piwerwszy</h2>
+                <h2>Blok Pierwszy</h2>
                 <div class="radioo">
                     <input type="radio" name="option" id="option1"><label for="option1">Opcja pierwsza</label>
                     <input type="radio" name="option" id="option2"><label for="option2">Opcja druga</label>
@@ -39,14 +39,23 @@
         </div>
     </div>
     <div class="footer">
-        <button class="awesome"><br >CSS <br>IS <br>AWESOME</button>
+        <button class="awesome"><br>CSS <br>IS <br>AWESOME</button>
         <p class="nabthat">---- nabthat ----</p>
-        <select class="select">
-            <option value="0">Pokaż</option>
-            <option value="1">Zresetuj Dane</option>
-            <option value="2">Pokaż Dane Osobowe</option>
-        </select>
-        <!-- <button class="press">Pokaż<i class="fa-solid fa-arrow-up"></i></button> -->
+        <div class="selector">
+            <div id="selectField" class="selectField">
+                <p class="selectText">Pokaż</p>
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <ul id="list" class="list hide">
+                <li class="options">
+                    <p>Zresetuj Dane</p>
+                </li>
+                <li class="options">
+                    <p>Pokaż Dane Osobowe</p>
+                </li>
+            </ul>
+        </div>
     </div>
+    
 </body>
 </html>
